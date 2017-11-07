@@ -64,6 +64,14 @@
           <item> wave </item>
         </one-of>
       </item>
+	  <item>
+        <tag>POSE</tag>
+        <one-of>
+          <item> pose </item>
+          <item> tpose </item>
+          <item> t-pose </item>
+        </one-of>
+      </item>
       <item>
         <tag>MASTER</tag>
         <one-of>
