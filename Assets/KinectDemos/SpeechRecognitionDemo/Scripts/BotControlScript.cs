@@ -33,7 +33,7 @@ public class BotControlScript : MonoBehaviour, SpeechRecognitionInterface
 	private bool jumpNow;
 	private bool waveNow;
     private bool pose;
-
+    
 	static int idleState = Animator.StringToHash("Base Layer.Idle");	
 	static int locoState = Animator.StringToHash("Base Layer.Locomotion");			// these integers are references to our animator's states
 	static int jumpState = Animator.StringToHash("Base Layer.Jump");				// and are used to check state for various actions to occur
@@ -117,7 +117,8 @@ public class BotControlScript : MonoBehaviour, SpeechRecognitionInterface
 	
 	void FixedUpdate ()
 	{
-		anim.SetFloat("Speed", walkSpeed);					// set our animator's float parameter 'Speed' equal to the vertical input axis				
+        Debug.Log(pose);
+        anim.SetFloat("Speed", walkSpeed);					// set our animator's float parameter 'Speed' equal to the vertical input axis				
 		anim.SetFloat("Direction", walkDirection); 			// set our animator's float parameter 'Direction' equal to the horizontal input axis		
 		anim.speed = animSpeed;								// set the speed of our animator to the public variable 'animSpeed'
 		//anim.SetLookAtWeight(lookWeight);					// set the Look At Weight - amount to use look at IK vs using the head's animation
