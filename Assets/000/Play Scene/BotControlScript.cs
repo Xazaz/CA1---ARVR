@@ -32,6 +32,7 @@ public class BotControlScript : MonoBehaviour, SpeechRecognitionInterface
 	private float walkDirection;
 	private bool jumpNow;
 	private bool waveNow;
+    private bool playNow;
 
 	static int idleState = Animator.StringToHash("Base Layer.Idle");	
 	static int locoState = Animator.StringToHash("Base Layer.Locomotion");			// these integers are references to our animator's states
@@ -87,6 +88,10 @@ public class BotControlScript : MonoBehaviour, SpeechRecognitionInterface
 				walkSpeed = 0.0f;
 				walkDirection = 0f;
 				break;
+
+            case "PLAY":
+                playNow = true;
+                break;
 		}
 
 		return true;
@@ -101,7 +106,10 @@ public class BotControlScript : MonoBehaviour, SpeechRecognitionInterface
 	
 	void FixedUpdate ()
 	{
-
+        if (playNow == true)
+        {
+            Application.LoadLevel(1);
+        }
 	}
 
 }
