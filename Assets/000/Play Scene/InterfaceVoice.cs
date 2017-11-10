@@ -5,6 +5,10 @@ using UnityEngine;
 public class InterfaceVoice : MonoBehaviour, SpeechRecognitionInterface
 {
     private bool playNow;
+    private bool joinNow;
+    private bool createNow;
+    private bool aiNow;
+    private bool quitNow;
 
     public bool SpeechPhraseRecognized(string phraseTag, float condidence)
     {
@@ -14,8 +18,24 @@ public class InterfaceVoice : MonoBehaviour, SpeechRecognitionInterface
             case "NOW":
                 print("GGG");
                 playNow = true;
-                Application.LoadLevel(1);
                 break;
+            case "JOINN":
+                print("JJJ");
+                joinNow = true;
+                break;
+            case "CREATEE":
+                print("CCC");
+                createNow = true;
+                break;
+            case "AII":
+                print("AAA");
+                aiNow = true;
+                break;
+            case "QUITT":
+                print("QQQ");
+                quitNow = true;
+                break;
+
         }
 
         return true;
@@ -39,10 +59,7 @@ public class InterfaceVoice : MonoBehaviour, SpeechRecognitionInterface
 
     void FixedUpdate()
     {
-        if (playNow == true)
-        {
-            Application.LoadLevel(1);
-        }
+      
     }
 }
 

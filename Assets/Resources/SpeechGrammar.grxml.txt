@@ -10,6 +10,38 @@
 		  <item>play</item>
         </one-of>
       </item>
+	   <item>
+        <tag>JOINN</tag>
+        <one-of>
+          <item>join</item>
+		  <item>joins</item>
+		  <item>joinroom</item>
+        </one-of>
+      </item>
+	   <item>
+        <tag>CREATEE</tag>
+        <one-of>
+          <item>create</item>
+		  <item>creates</item>
+		  <item>createroom</item>
+        </one-of>
+      </item>
+	   <item>
+        <tag>AII</tag>
+        <one-of>
+          <item>ai</item>
+		  <item>ais</item>
+		  <item>playai</item>
+        </one-of>
+      </item>
+	   <item>
+        <tag>QUITT</tag>
+        <one-of>
+          <item>quits</item>
+		  <item>quit</item>
+		  <item>exit</item>
+        </one-of>
+      </item>
       <item>
         <tag>MASTER</tag>
         <one-of>
