@@ -5,8 +5,8 @@ using UnityEngine.Audio;
 using UnityEngine.UI;
 public class onAudio : MonoBehaviour {
     public AudioMixer masterMixer;
+	public AudioSource audio;
     public Slider musicSlide;
-    public AudioSource audio;
 	// Use this for initialization
 	void Start () {
 		

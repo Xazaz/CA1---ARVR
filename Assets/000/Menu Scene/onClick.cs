@@ -16,6 +16,5 @@ public class onClick : MonoBehaviour {
 
     public void clickOn()
     {
-        Application.LoadLevel(1);
     }
 }
