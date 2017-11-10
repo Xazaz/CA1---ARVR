@@ -107,6 +107,7 @@
   <ItemGroup>
     <Compile Include="Assets\000\Menu Scene\GrabDropScript.cs" />
     <Compile Include="Assets\000\Menu Scene\InterfaceScript.cs" />
+    <Compile Include="Assets\000\Menu Scene\onAudio.cs" />
     <Compile Include="Assets\000\Menu Scene\onClick.cs" />
     <Compile Include="Assets\000\Play Scene\AvatarController.cs" />
     <Compile Include="Assets\000\Play Scene\BotControlScript.cs" />
